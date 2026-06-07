@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context=".Practica2Activity">
+
+    <ImageView
+        android:id="@+id/imgP2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/triangle" />
+
+    <TextView
+        android:id="@+id/txtTituloP2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Validador de Triángulos"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imgP2" />
+
+    <EditText
+        android:id="@+id/edtLadoA"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:hint="Medida Lado A"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloP2" />
+
+    <EditText
+        android:id="@+id/edtLadoB"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Medida Lado B"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/edtLadoA" />
+
+    <EditText
+        android:id="@+id/edtLadoC"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Medida Lado C"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/edtLadoB" />
+
+    <Button
+        android:id="@+id/btnValidarTriangulo"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Validar y Calcular Área"
+        app:layout_constraintTop_toBottomOf="@+id/edtLadoC" />
+
+    <TextView
+        android:id="@+id/txtResultadoValidacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Distancia: 0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/btnValidarTriangulo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
