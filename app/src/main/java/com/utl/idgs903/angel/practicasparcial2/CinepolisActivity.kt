@@ -71,7 +71,7 @@ class CinepolisActivity : AppCompatActivity() {
             return
         }
 
-        val precioBoleta = 12000.0
+        val precioBoleta = 12.0
         val totalBase = boletas * precioBoleta
         var descuentoBase = 0.0
 
