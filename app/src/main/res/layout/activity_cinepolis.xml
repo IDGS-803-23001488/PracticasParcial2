@@ -96,26 +96,13 @@
 
     <Button
         android:id="@+id/btnProcesar"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="53dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
         android:text="Procesar"
-        app:layout_constraintEnd_toStartOf="@+id/btnSalir"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etBoletas" />
-
-    <Button
-        android:id="@+id/btnSalir"
-        android:layout_width="0dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:text="Salir"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnProcesar"
         app:layout_constraintTop_toBottomOf="@+id/etBoletas" />
 
     <TextView

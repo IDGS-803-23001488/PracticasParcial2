@@ -22,7 +22,6 @@ class CinepolisActivity : AppCompatActivity() {
     private lateinit var rbNo: RadioButton
     private lateinit var tvValorPagar: TextView
     private lateinit var btnProcesar: Button
-    private lateinit var btnSalir: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,10 +43,8 @@ class CinepolisActivity : AppCompatActivity() {
         rbNo = findViewById(R.id.rbNo)
         tvValorPagar = findViewById(R.id.tvValorPagar)
         btnProcesar = findViewById(R.id.btnProcesar)
-        btnSalir = findViewById(R.id.btnSalir)
 
         btnProcesar.setOnClickListener { procesarCompra() }
-        btnSalir.setOnClickListener { finish() }
     }
 
     private fun procesarCompra() {
