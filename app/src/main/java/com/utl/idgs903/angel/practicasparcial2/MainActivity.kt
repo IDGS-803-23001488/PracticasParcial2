@@ -31,6 +31,12 @@ class MainActivity : AppCompatActivity() {
         val btnEjemplo3 = findViewById<Button>(R.id.btn3)
         btnEjemplo3.setOnClickListener { navigateTo(Practica3Activity::class.java) }
 
+        val btnPractica4 = findViewById<Button>(R.id.btn4)
+        btnPractica4.setOnClickListener { navigateTo(CalculadoraResistenciasActivity::class.java) }
+
+        val btnPractica5 = findViewById<Button>(R.id.btn5)
+        btnPractica5.setOnClickListener { navigateTo(CinepolisActivity::class.java) }
+
     }
 
     private fun navigateTo(cls: Class<*>) {
